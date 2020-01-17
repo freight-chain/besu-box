@@ -24,10 +24,10 @@ Start a Besu node with JSON-RPC enabled on the endpoint specified in the Truffle
 > You will need a genesis file as well 
 
 <br>
-
 `brew tap hyperledger/besu`<br>
 `brew install besu` <br>
-Run the besu executable:<br>
+
+4. Run the besu executable:<br>
 `besu --help`<br>
 `besu --data-path=data --genesis-file=genesis.json --p2p-port=30303 --rpc-http-enabled --rpc-http-api=ETH,NET,ADMIN --host-whitelist="*" --rpc-http-cors-origins="all"` 
 <br>

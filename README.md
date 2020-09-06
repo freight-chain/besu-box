@@ -7,6 +7,8 @@
 <br> 
 This is a boilerplate template for development on Hyperledger Besu
 
+> 🔗 [npm package available @ truffle-hyperledger-besu-box](https://www.npmjs.com/package/truffle-hyperledger-besu-box)
+
 You can [read the official documentation here](https://besu.hyperledger.org/en/stable/HowTo/Develop-Dapps/Truffle/)
 
 ## Overview

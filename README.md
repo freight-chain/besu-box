@@ -1,15 +1,28 @@
 # Hyperledger Besu Truffle Box
 
+<img src="assets/box-img-lg.png" align="right" width="325">
+
+<br />
+
+<br> 
 This is a boilerplate template for development on Hyperledger Besu
 
 You can [read the official documentation here](https://besu.hyperledger.org/en/stable/HowTo/Develop-Dapps/Truffle/)
 
+## Overview
+
+Run a local devnet or connect to a test network
+
+### Quickstart
+
+`. ./init-besu.sh`
+
 ## Getting Started
 
-1.  Install Truffle Wallet
+1.  Install
 
-        To install the Truffle wallet:
-        `npm install --save truffle-hdwallet-provider@web3-one`
+        Install the NPM Package:
+        `npm install truffle-hyperledger-besu-box`
 
 2.  Modify the truffle-config.js file in the project directory to add the wallet provider. Replace:
 
@@ -38,3 +51,7 @@ You can [read the official documentation here](https://besu.hyperledger.org/en/s
    `truffle migrate --network besuWallet`
 
 <br>
+
+## License
+
+MIT / Apache-2.0

@@ -4,7 +4,7 @@
 
 <br />
 
-<br> 
+<br>
 This is a boilerplate template for development on Hyperledger Besu
 
 > 🔗

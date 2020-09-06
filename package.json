@@ -1,0 +1,31 @@
+{
+  "name": "truffle-besu-box",
+  "version": "1.0.0",
+  "description": "This is a boilerplate template for development on Hyperledger Besu",
+  "main": "truffle-config-besu.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freight-chain/besu-box.git"
+  },
+  "keywords": [
+    "hyperledger",
+    "hyperledger besu",
+    "ethereum",
+    "blockchain",
+    "truffle",
+    "solidity",
+    "smart contracts"
+  ],
+  "author": "SEE LICENSE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freight-chain/besu-box/issues"
+  },
+  "homepage": "https://github.com/freight-chain/besu-box#readme"
+}

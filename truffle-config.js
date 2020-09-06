@@ -1,22 +1,25 @@
-// For More Information See the Documentation
-// https://besu.hyperledger.org/en/stable/HowTo/Develop-Dapps/Truffle/
-// 
-// @dev <JSON-RPC-http-endpoint> with the JSON-RPC endpoint (IP address and port) of a Besu node
-// @dev <account-private-key> with the private key of an Ethereum account containing Ether
-// @dev to deploy to besu network: truffle migrate --network besuWallet
+/* eslint-disable no-undef */
+const PrivateKeyProvider = require("@truffle/hdwallet-provider");
 
-
-const PrivateKeyProvider = require("truffle-hdwallet-provider");
-const privateKey = "<account-private-key>";
-const privateKeyProvider = new PrivateKeyProvider(privateKey, "<JSON-RPC-http-endpoint>");
+// insert the private key of the account used in metamask eg: Account 1 (Miner Coinbase Account)
+const privateKey =
+  "c87509a1c067bbde78beb793e6fa76530b6382a4c0241e5e4a9ec0a0f44dc0d3";
 
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
   // for more about customizing your Truffle configuration!
   networks: {
-    besuWallet: {
-      provider: privateKeyProvider,
-      network_id: "*"
+    development: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "*", // Match any network id
     },
-  }
+    develop: {
+      port: 8545,
+    },
+    besuNetwork: {
+      provider: () => new PrivateKeyProvider(privateKey, "http://localhost:8545"),
+      network_id: "*",
+    },
+  },
 };
